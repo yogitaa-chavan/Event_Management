@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+body{
+
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+header{
+  
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background: #f0ebeb;
+    z-index: 999;
+   
+}
+header>nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f0ebeb;
+    color: #050505;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+nav p{
+    width: 100px;
+    
+}
+nav>p>img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 95%;
+    border-radius: 50%;
+    background: #f5f0f0;
+    margin-top: 11px;
+}
+nav a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+#text{
+    margin: 22px;
+    /* background: rgb(193, 224, 234); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    font-weight: bold;
+
+}
+P:nth-child(2){
+    color: rgb(72, 54, 7);
+    font-size: 1.8em;
+    padding: 10px;
+    /* background: #000; */
+   
+}
+P:first-child{
+    color: rgb(163, 119, 7);
+    font-size: 4em;
+    padding: 10px;
+}
+#Home{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#slider{
+    width: 90%;
+    height: 100%;
+    /* background: #852727; */
+    display: flex;
+    /* overflow: auto; */
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    overflow-x: scroll;
+  overflow-y: hidden;
+}
+#slider>div{
+    width: 19%;
+    height: 100%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slider>div>img{
+    height: 100%;
+    width: 100%;
+}
+.service-caption {
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #5c3b00;
+    text-align: center;
+    padding: 20px 0;
+    /* border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
+    background-color: #f7f3eb;
+    margin: 30px 0 10px 0;
+    /* opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out; */
+   
+  }
+  /* .service-caption:hover {
+    animation-play-state: running;
+    animation: lines 5s linear infinite forwards;
+    /* animation-play-state: paused;
+    transform: translate(0) 
+  } */
+ 
+  
+  /* .service-caption:hover {
+    animation: fadeSlideUp 0.6s ease-out forwards;
+  } */
+
+
+
+#para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c3b00;
+  }
+#para>.service-heading{
+    font-size: 2em;
+    align-items: center;
+    /* background: #000; */
+  }
+  .event-block p{
+    font-size: 2em;
+  }
+  .event-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .event-row > div {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .event-row > div:hover {
+    transform: scale(1.03);
+  }
+  
+  .event-row > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+ 
+
+.contact{
+    height: 40vh;
+    width: 100%;
+    /* margin: 0px 5px; */
+    /* background-image: linear-gradient(rgb(51, 50, 50),rgb(135, 81, 126)); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact>div{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background:rgba(81, 37, 4, 0.1); */
+    border-radius: 10px;
+}
+.contact>div>p{
+    margin: 2px;
+    font-size: 2.5em;
+    padding: 3px;
+}
+.contact i,a{
+    color: rgb(89, 64, 1);
+    text-decoration: none;
+    margin: 3px;
+}
+/* .about{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center;
+}
+.about p{
+    font-size: 2.2em;
+    color: rgb(90, 65, 2);
+    color: red; 
+}
+.about>div p{
+    font-size: 2em;
+    /* color: rgb(100, 72, 2); 
+    color: #000;
+} */
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#about h3{
+    color: #0f0f0f;
+    font-size: 25px;
+    padding: 10px;
+}
+#about>p{
+    font-size: 2em;
+    /* color: rgb(100, 72, 2); */
+    color: #3a2f01;
+}
+.a {
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #00000023;
+
+    /* justify-content: space-between; */
+}
+.a a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(62, 62, 3);
+}
+
+/* @keyframes lines {
+    from {
+        opacity: 0;
+        transform: scale(0.95); /* Slightly smaller 
+      }
+      to {
+        opacity: 1;
+        transform: scale(1); Full size 
+      }
+    } */
+
+    @media (max-width: 650px) or (max-width : 12px){
+        /* Header */
+        header {
+            height: 60px; /* Smaller header on mobile */
+        }
+    
+        nav {
+            font-size: 14px; /* Smaller font size */
+            /* flex-direction: column; Stack the nav items vertically */
+            justify-content: flex-start;
+            padding: 10px;
+        }
+    
+        nav p {
+            width: 80px;
+        }
+    
+        /* Slider Adjustments 
+        #slider {
+            display: flex;
+            flex-direction: row;  /* Arrange images in a horizontal row 
+            overflow-x: auto;  /* Allow horizontal scrolling 
+            scroll-snap-type: x mandatory;  /* Smooth snapping when scrolling 
+            gap: 10px;  /* Optional: Adds a gap between images 
+            padding: 10px 0;  /* Optional: Padding around the images *
+        }
+        
+        #slider > div {
+            flex: 0 0 auto;  /* Prevent images from shrinking or growing *
+            width: 300px;  /* Set a fixed width for each image container (adjust based on your design) 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-snap-align: start;  /* Snap images to the start of the container 
+        }
+        
+        #slider > div > img {
+            width: 100%;  /* Make the image take up the full width of the container *
+            height: auto;  /* Maintain the image's aspect ratio 
+            object-fit: cover;  /* Ensure the image covers the container without distortion 
+            border-radius: 8px;  /* Optional: Add rounded corners 
+        }
+        */
+
+        #slider > div {
+            width: 200px;  /* Adjust width for smaller screens */
+        }
+    
+        /* Text Adjustments */
+        #text {
+            margin: 15px;
+        }
+    
+        P:nth-child(2) {
+            font-size: 1em; /* Smaller text */
+        }
+    
+        P:first-child {
+            font-size: 1.8em; /* Smaller text */
+        }
+    
+        /* Home Section */
+        #Home {
+            width: 100%;
+            height: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        /* Para Section */
+        #para {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5c3b00;
+        }
+    
+        #para .service-heading {
+            font-size: 1.4em; /* Smaller font */
+        }
+    
+        /* Event Block Adjustments */
+        .event-block p {
+            font-size: 1.4em; /* Smaller font */
+        }
+    
+        .event-row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .event-row > div {
+            width: 45%; /* Smaller width for mobile */
+            height: auto;
+            border: 2px solid #ccc;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .event-row > div:hover {
+            transform: scale(1.03);
+        }
+    
+        .event-row > div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        /* Contact Section */
+        .contact {
+            height: 40vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .contact > div {
+            height: 80%;
+            width: 80%; /* Wider container on mobile */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+    
+        .contact > div > p {
+            margin: 2px;
+            font-size: 1em; /* Adjust text size */
+            padding: 3px
+        }
+    
+        .contact i, a {
+            color: rgb(89, 64, 1);
+            text-decoration: none;
+            margin: 3px;
+        }
+    
+        /* About Section */
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        #about h3 {
+            color: #0f0f0f;
+            font-size: 15px; /* Smaller heading */
+            padding: 10px;
+        }
+    
+        #about > p {
+            font-size: 1.5em; /* Smaller text */
+            color: #3a2f01;
+        }
+    
+        /* Link Sizes */
+        .a a {
+            text-decoration: none;
+            font-size: 15px; /* Smaller text */
+            color: rgb(62, 62, 3);
+        }
+    
+        /* Event Block Image Scaling */
+        .event-row > div img {
+            height: 200px; /* Adjust height for smaller screens */
+            width: 100%;
+        }
+        #logo{
+            font-size: 5px;
+            margin: 10px;
+        }
+        #logo+img{
+            height: 300px;
+            width: 250px;
+            margin: 1px;
+        }
+    }
+    
+    
